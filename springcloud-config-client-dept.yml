@@ -17,9 +17,6 @@ mybatis:
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
-spring:
-   application:
-    name: MICROSERVICECLOUD-DEPT             #对外暴露的微服务名称
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -40,7 +37,7 @@ eureka:
       #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 
   instance:
-    instance-id: microservicecloud-dept8003
+    instance-id: microservicecloud-config-dept8003
     prefer-ip-address: true     #访问路径可以显示IP地址
  
 info:
@@ -63,10 +60,7 @@ mybatis:
   type-aliases-package: com.guigu.enity   # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-    
-spring:
-   application:
-    name: MICROSERVICECLOUD-DEPT             #对外暴露的微服务名称
+       
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -87,7 +81,7 @@ eureka:
       #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 
   instance:
-    instance-id: microservicecloud-dept8003
+    instance-id: microservicecloud-config-dept8003
     prefer-ip-address: true     #访问路径可以显示IP地址
  
 info:
