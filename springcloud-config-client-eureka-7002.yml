@@ -4,12 +4,12 @@ spring:
     - dev
 ---
 server:
-  port: 7001
+  port: 7002
   
 spring:
   profiles: dev
   application:
-    name:spring-config-client-eureka
+    name:spring-config-client-eureka-7002
     
 eureka:
   #server:
@@ -24,12 +24,12 @@ eureka:
       defaultZone:  http://eureka7001.com:7001/eureka/
 ---
 server:
-  port: 7001
+  port: 7002
   
 spring:
   profiles: test
   application:
-    name:spring-config-client-eureka
+    name:spring-config-client-eureka-7002
   
 eureka:
   #server:
